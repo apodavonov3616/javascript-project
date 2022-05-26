@@ -7,6 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     canvasEl.height = 800;
 
     const ctx = canvasEl.getContext("2d");
-    ctx.fillStyle = "grey";
-    ctx.fillRect(0, 0, 600, 800);
+    // ctx.fillStyle = "grey";
+    // ctx.fillRect(0, 0, 600, 800);
 });

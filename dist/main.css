@@ -2,3 +2,14 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
 
+  body{
+    background:url(https://cdn.wallpapersafari.com/82/95/ON3b0Y.jpg) repeat #181899;
+  }
+
+h1 {
+  font-family: "Open Sans"
+}
+
+#main-canvas {
+  border: 1px solid black
+}
