@@ -1,3 +1,5 @@
+import Bench from "./scripts/bench"
+
 console.log("webpack is working")
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -7,6 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     canvasEl.height = 800;
 
     const ctx = canvasEl.getContext("2d");
-    // ctx.fillStyle = "grey";
-    // ctx.fillRect(0, 0, 600, 800);
+    ctx.fillStyle = "grey";
+    ctx.fillRect(0, 0, 600, 800);
+
+    const main = document.getElementById("main")
+    new Bench(main)
 });
