@@ -13,10 +13,11 @@ Wireframes: Image of my project structure is located at powerlifting_visualizer2
 Other aspects:
 The readme will be the same as the first paragraph. I may or may not add in a functionality of having the readme scroll from the left into view as the user scrolls down.
 
-Technologies: I will mainly be using vanilla DOM javascript and canvas. If I do decide to incorporate libraries, it will be if I finish my project ahead of time. and decide to add powerlifting facts into the project.
+Technologies: I will mainly be using vanilla DOM javascript, webpack, npm, and canvas. If I do decide to incorporate libraries, it will be if I finish my project ahead of time. and decide to add powerlifting facts into the project.
 
 Schedule:
 Friday: Collect all pictures and get pictures showing up on the website. Also figure out how to change from one picture to the next with the use of a slider/button
 Saturday-Sunday: Create hover elements for each picture, showcasing possibly different colors for different types of information presented on the image.
 Mon-Wednesday: Focus on CSS styling with making pretty fonts, good background, perhaps fancy scrolling features
 If done early, possibly incorporate some sort of quiz interactivity, but no solid ideas yet.
+Thursday: Deploy github page.
