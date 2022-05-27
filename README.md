@@ -9,7 +9,7 @@ In the Powerlifting Visualizer, users will be able to:
 
 
 Wireframes: Image of my project structure is located at powerlifting_visualizer2.png in the same folder as this README
-![Screenshot](powerlifting_visualizer.png)
+![Screenshot](powerlifting_visualizer2.png)
 
 
 Other aspects:
