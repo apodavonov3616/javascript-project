@@ -9,6 +9,8 @@ In the Powerlifting Visualizer, users will be able to:
 
 
 Wireframes: Image of my project structure is located at powerlifting_visualizer2.png in the same folder as this README
+![Screenshot](powerlifting_visualizer.png)
+
 
 Other aspects:
 The readme will be the same as the first paragraph. I may or may not add in a functionality of having the readme scroll from the left into view as the user scrolls down.
