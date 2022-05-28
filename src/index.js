@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // const main = document.getElementById("main")
     // new Bench(main)
     let img = new Image();
-    img.src = "../src/images/colors.png"
-    img.onload = function(){
+    img.src = "../src/images/00001.png"
+    img.onload = function () {
         ctx.drawImage(img, 240, 240)
     }
 
-    
+
     // document.getElementById("main-canvas").innerHTML='<img src="../src/images/strick_figure.png" alt="sample"'>;
 });
