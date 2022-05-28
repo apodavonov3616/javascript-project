@@ -13,9 +13,25 @@
 
   <body>
       <h1>Powerlifting Visualizer</h1>
-      <main id="main"></main>
+      <!-- <main id="main"></main> -->
+      <nav class="Buttons">
+        <div>
+          <button class="Exercise">Squat</button>
+        </div>
 
+        <div>
+          <button class="Exercise">Bench</button>
+        </div>
+
+        <div>
+          <button class="Exercise">Deadlift</button>
+        </li>
+      </nav>
       <canvas id="main-canvas"></canvas>
+
+      <div id="slide-holder">
+        <input type="range" min="1" max="5" value="1" id="exercise-progression" steps="1">
+      </div>
   </body>
 
 </html>

@@ -8,8 +8,7 @@ In the Powerlifting Visualizer, users will be able to:
 -this feature may or may not be incorporporated: include a quiz which asks the user whats wrong with a certain position in the lift, rewarding them with a flashy feature if they win.
 
 
-Wireframes: Image of my project structure is located at powerlifting_visualizer2.png in the same folder as this README
-![Screenshot](powerlifting_visualizer2.png)
+![website structure](powerlifting_visualizer2.png)
 
 
 Other aspects:
