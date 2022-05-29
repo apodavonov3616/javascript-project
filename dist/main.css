@@ -37,6 +37,19 @@ h1 {
   transform: scale(1.4);
 }
 
-input[type=range]::-webkit-slider-runnable-track {
-  scale: 3;
+#exercise-progression {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 50px;
+  width: 50%;
+  background-color: rgb(194, 125, 125);
+  cursor: grab;
+}
+
+#exercise-progression::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 5%;
+  height: 50px;
+  background: red;
 }

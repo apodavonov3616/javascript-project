@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./main.css" />
-    <!-- <link rel="stylesheet" href="../src/index.scss"> -->
+    <style>
+      .container {
+        width: 250px;
+        height: 200px;
+        border: 1px solid purple;
+      }
+
+      .bar {
+        fill: purple;
+      }
+
+      .label {
+        fill: purple;
+      }
+    </style>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-scale@4"></script>
     <script src="./main.js"></script>
     <title>Powerlifting Visualizer</title>
   </head>
 
   <body>
       <h1>Powerlifting Visualizer</h1>
-      <!-- <main id="main"></main> -->
+
       <nav class="Buttons">
         <div>
           <button class="Exercise">Squat</button>
