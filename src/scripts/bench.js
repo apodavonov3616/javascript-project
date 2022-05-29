@@ -12,5 +12,4 @@ class Bench {
         this.ele.children[0].innerText = "Ouch"
     }
 }
-
-export default Bench;
+module.exports = Bench

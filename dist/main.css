@@ -37,19 +37,72 @@ h1 {
   transform: scale(1.4);
 }
 
-#exercise-progression {
-  -webkit-appearance: none;
-  appearance: none;
-  height: 50px;
-  width: 50%;
-  background-color: rgb(194, 125, 125);
-  cursor: grab;
+.slider {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
 }
 
-#exercise-progression::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 5%;
-  height: 50px;
-  background: red;
+.slider .slider-item {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: absolute;
+  transition: transform 200ms;
+}
+
+.slider .slider-item.active,
+.slider .slider-item.prev-item,
+.slider .slider-item.next-item {
+  display: block;
+}
+
+.slider-item.active.slide-prev,
+.slider-item.next-item {
+  transform: translateX(100%);
+}
+
+.slide-indicators {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.slider-control-prev,
+.slider-control-next {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.3;
+  transition: opacity 300ms;
+}
+
+.slider-control-prev:hover {
+  opacity: 1;
+}
+
+.slider-control-next {
+  right: 20px;
+}
+
+.slider-control-next:hover {
+  opacity: 1;
+}
+
+.slide-indicator {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 0.5;
+  margin: 0 8px;
+}
+
+.slide-indicator.active {
+  opacity: 1;
 }
