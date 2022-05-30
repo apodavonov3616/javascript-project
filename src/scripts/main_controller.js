@@ -9,13 +9,13 @@ class MainController {
 
     }
 
-    makeImage(ctx, exercise) {
+    makeImage(exercise) {
         if (exercise === "Squat") {
-            squat_instance = new Squat(ctx)
+            squat_instance = new Squat()
         } else if (exercise === "Bench") {
-            bench_instance = new Bench(ctx)
+            bench_instance = new Bench()
         } else {
-            deadlift_instance = new Deadlift(ctx)
+            deadlift_instance = new Deadlift()
         }
 
     }

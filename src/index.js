@@ -21,21 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // main_controller.renderSlider()
     console.log("hello")
 
-    const canvasEl = document.getElementById("canvas");
-    canvasEl.width = 400;
-    canvasEl.height = 600;
-    const ctx = canvasEl.getContext("2d");
-    ctx.fillStyle = "black";
-    ctx.fillRect(0, 0, 400, 600);
-
     document.getElementById("Squat").addEventListener("click", function () {
-        main_controller.makeImage(ctx, "Squat");
+        main_controller.makeImage("Squat");
     });
     document.getElementById("Bench").addEventListener("click", function () {
-        main_controller.makeImage(ctx, "Bench");
+        main_controller.makeImage("Bench");
     });
     document.getElementById("Deadlift").addEventListener("click", function () {
-        main_controller.makeImage(ctx, "Deadlift");
+        main_controller.makeImage("Deadlift");
     });
 });
 
