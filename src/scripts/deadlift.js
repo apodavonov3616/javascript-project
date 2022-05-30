@@ -1,4 +1,5 @@
 class Deadlift {
+    $current_image_number = null
 
     deadlift_picture_sources = [
         "../src/images/deadlift_pics/00001.png",
@@ -18,9 +19,15 @@ class Deadlift {
         const ctx = canvasEl.getContext("2d");
         ctx.fillStyle = "black";
         ctx.fillRect(0, 0, 400, 600);
+        this.$current_image_number = 0
+        this.renderCurrentImage(ctx, this.$current_image_number)
+        this.ctx = ctx
+    }
+
+    renderCurrentImage(ctx, number) {
 
         let img = new Image();
-        img.src = this.deadlift_picture_sources[0]
+        img.src = this.deadlift_picture_sources[number]
         img.onload = function () {
             ctx.drawImage(img, 0, 0)
         }
@@ -54,8 +61,18 @@ class Deadlift {
         container.appendChild(y)
     }
 
-    nextPicture() {
-        const element2 = document.getElementById("back");
+    nextImage() {
+        this.$current_image_number = this.$current_image_number + 1
+        this.renderCurrentImage(this.ctx, ((this.$current_image_number) % 7))
+    }
+
+    lastImage() {
+        if (this.$current_image_number === 0) {
+            this.$current_image_number === 6
+        } else {
+            this.$current_image_number = this.$current_image_number - 1
+        }
+        this.renderCurrentImage(this.ctx, ((this.$current_image_number) % 7))
     }
 }
 

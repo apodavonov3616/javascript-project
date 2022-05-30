@@ -38,9 +38,21 @@ document.addEventListener("DOMContentLoaded", () => {
         if (event.target.matches('#next')) {
             // event.target.closest('.todo-item').remove();
             // console.log(squat_instance)
-            squat_instance.nextImage()
+            if ($current_exercise === "Squat"){
+                squat_instance.nextImage()
+            } else if ($current_exercise === "Bench"){
+                bench_instance.nextImage()
+            } else {
+                deadlift_instance.nextImage()
+            }
         } else {
-            squat_instance.lastImage()
+            if ($current_exercise === "Squat"){
+                squat_instance.lastImage()
+            } else if ($current_exercise === "Bench"){
+                bench_instance.lastImage()
+            } else {
+                deadlift_instance.lastImage()
+            }
         }
     });
 
