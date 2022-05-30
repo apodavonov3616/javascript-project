@@ -1,4 +1,5 @@
 class Squat {
+    $current_image_number = null
 
     squat_picture_sources = [
         "../src/images/squat_pics/00001.png",
@@ -18,9 +19,15 @@ class Squat {
         const ctx = canvasEl.getContext("2d");
         ctx.fillStyle = "black";
         ctx.fillRect(0, 0, 400, 600);
+        this.$current_image_number = 0
+        this.renderCurrentImage(ctx, this.$current_image_number)
+        this.ctx = ctx
+    }
+
+    renderCurrentImage(ctx, number) {
 
         let img = new Image();
-        img.src = this.squat_picture_sources[0]
+        img.src = this.squat_picture_sources[number]
         img.onload = function () {
             ctx.drawImage(img, 0, 0)
         }
@@ -52,7 +59,24 @@ class Squat {
         y.appendChild(u);
         document.body.appendChild(y);
         container.appendChild(y)
+    }
 
+    hello() {
+        console.log('squatting a lot')
+    }
+
+    nextImage() {
+        this.$current_image_number = this.$current_image_number + 1
+        this.renderCurrentImage(this.ctx, ((this.$current_image_number) % 7))
+    }
+
+    lastImage() {
+        if (this.$current_image_number === 0) {
+            this.$current_image_number === 6
+        } else {
+            this.$current_image_number = this.$current_image_number - 1
+        }
+        this.renderCurrentImage(this.ctx, ((this.$current_image_number) % 7))
     }
 }
 

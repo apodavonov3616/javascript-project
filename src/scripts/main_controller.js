@@ -17,7 +17,6 @@ class MainController {
         } else {
             deadlift_instance = new Deadlift()
         }
-
     }
 
     // renderSlider() {

@@ -1,8 +1,4 @@
-// import Buttons from "./scripts/buttons"
-// import Slider from "./scripts/slider"
-// import Squat from "./scripts/squat"
-// import Bench from "./scripts/bench"
-// import Deadlift from "./scripts/deadlift"
+
 const Buttons = require("./scripts/buttons")
 // const Slider = require("./scripts/slider")
 const Squat = require("./scripts/squat")
@@ -35,10 +31,27 @@ document.addEventListener("DOMContentLoaded", () => {
         $current_exercise = "Deadlift"
     });
 
-    nextButton = document.getElementById("next")
-    // nextButton.addEventListener("click",)
-});
 
+    document.querySelector('.our_container').addEventListener('click', event => {
+
+        // Check if the clicked element was actually a .remove-button
+        if (event.target.matches('#next')) {
+            // event.target.closest('.todo-item').remove();
+            // console.log(squat_instance)
+            squat_instance.nextImage()
+        } else {
+            squat_instance.lastImage()
+        }
+    });
+
+    // function renderNext() {
+    //     if ($current_exercise === "Squat") {
+    //         console.log('hi world')
+    //         squat_instance.nextImage()
+    //     }
+    // }
+
+})
 // const main = document.getElementById("main")
 // new Bench(main)
 // let img = new Image();
