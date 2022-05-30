@@ -17,9 +17,10 @@ console.log(d3)
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const slider = new Slider(
-        document.querySelector(".slider")
-    );
+
+    main_controller = new MainController()
+    main_controller.renderSlider()
+
     // const canvasEl = document.getElementById("main-canvas");
     // canvasEl.width = 1300;
     // canvasEl.height = 1000;
