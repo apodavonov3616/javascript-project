@@ -20,16 +20,23 @@ document.addEventListener("DOMContentLoaded", () => {
     main_controller = new MainController()
     // main_controller.renderSlider()
     console.log("hello")
+    $current_exercise = "squat"
 
     document.getElementById("Squat").addEventListener("click", function () {
         main_controller.makeImage("Squat");
+        $current_exercise = "Squat"
     });
     document.getElementById("Bench").addEventListener("click", function () {
         main_controller.makeImage("Bench");
+        $current_exercise = "Bench"
     });
     document.getElementById("Deadlift").addEventListener("click", function () {
         main_controller.makeImage("Deadlift");
+        $current_exercise = "Deadlift"
     });
+
+    nextButton = document.getElementById("next")
+    // nextButton.addEventListener("click",)
 });
 
 // const main = document.getElementById("main")

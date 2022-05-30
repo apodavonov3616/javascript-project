@@ -1,5 +1,15 @@
 class Squat {
 
+    squat_picture_sources = [
+        "../src/images/squat_pics/00001.png",
+        "../src/images/squat_pics/00002.png",
+        "../src/images/squat_pics/00003.png",
+        "../src/images/squat_pics/00004.png",
+        "../src/images/squat_pics/00005.png",
+        "../src/images/squat_pics/00006.png",
+        "../src/images/squat_pics/00007.png"
+    ]
+
     constructor() {
 
         const canvasEl = document.getElementById("canvas");
@@ -10,7 +20,7 @@ class Squat {
         ctx.fillRect(0, 0, 400, 600);
 
         let img = new Image();
-        img.src = "../src/images/squat_pics/00001.png"
+        img.src = this.squat_picture_sources[0]
         img.onload = function () {
             ctx.drawImage(img, 0, 0)
         }
