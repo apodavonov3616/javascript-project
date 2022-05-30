@@ -300,6 +300,5 @@ exertion = [
                 "Calves": 0
             }
         }
-
     }
 ]
