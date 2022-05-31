@@ -56,15 +56,34 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    const DUMMY_DATA = [
-        { id: 'd1', region: 'USA', value:10 },
-        { id: 'd2', region: 'India', value:12 },
-        { id: 'd3', region: 'China', value:11 },
-        { id: 'd4', region: 'Germany', value:6 },
-    ]
+    const DUMMY_DATA = [exertion[0]["Squat"][1]]
+
+    // const DUMMY_DATA = [
+    //     {muscle: "Biceps", value: 0},
+    //     {muscle: "Latissimus Dorsi", value: 0},
+    //     {muscle: "Erector Spinae", value: 1},
+    //     {muscle: "Trapezius", value: 0},
+    //     {muscle: "Deltoids", value: 0},
+    //     {muscle: "Triceps", value: 0},
+    //     {muscle: "Pectorals", value: 0},
+    //     {muscle: "Abdominals", value: 0},
+    //     {muscle: "Glutes", value: 0},
+    //     {muscle: "Quadriceps", value: 0},
+    //     {muscle: "Hamstrings", value: 0},
+    //     {muscle: "Calves", value: 0}
+    // ]
+
+    console.log(exertion[0]["Squat"][1][0])
+    console.log(DUMMY_DATA)
+    // const DUMMY_DATA = [
+    //     { id: 'd1', muscle: 'USA', value:10 },
+    //     { id: 'd2', region: 'India', value:12 },
+    //     { id: 'd3', region: 'China', value:11 },
+    //     { id: 'd4', region: 'Germany', value:6 },
+    // ]
 
     const MARGINS = {top: 20, bottom:10};
-    const CHART_WIDTH = 600;
+    const CHART_WIDTH = 1000;
     const CHART_HEIGHT = 400 - MARGINS.top - MARGINS.bottom;
 
     const x = d3.scaleBand().rangeRound([0, CHART_WIDTH]).padding(0.1);
@@ -74,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .attr('width', CHART_WIDTH)
         .attr('height', CHART_HEIGHT + MARGINS.top + MARGINS.bottom);
 
-        x.domain(DUMMY_DATA.map((d) => d.region));
+        x.domain(DUMMY_DATA.map((d) => d.muscle));
         y.domain([0, d3.max(DUMMY_DATA, d=> d.value) + 3])
 
     const chart = chartContainer.append('g');
@@ -91,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .classed('bar', true)
         .attr('width', x.bandwidth())
         .attr('height', data => CHART_HEIGHT - y(data.value))
-        .attr('x', (data) => x(data.region))
+        .attr('x', (data) => x(data.muscle))
         .attr('y', (data) => y(data.value));
 
     chart.selectAll('.label')
@@ -99,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .enter()
         .append('text')
         .text((data) => data.value)
-        .attr('x', data => x(data.region)+x.bandwidth() / 2)
+        .attr('x', data => x(data.muscle)+x.bandwidth() / 2)
         .attr('y', data => y(data.value)-20)
         .attr('text-anchor', 'middle')
         .classed('label', true)
