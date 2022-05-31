@@ -56,22 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // function renderNext() {
-    //     if ($current_exercise === "Squat") {
-    //         console.log('hi world')
-    //         squat_instance.nextImage()
-    //     }
-    // }
+
 
 })
-// const main = document.getElementById("main")
-// new Bench(main)
-// let img = new Image();
-// img.src = "../src/images/squat/00001.png"
-// img.onload = function () {
-//     ctx.drawImage(img, 240, 240)
-// }
 
-
-    // document.getElementById("main-canvas").innerHTML='<img src="../src/images/strick_figure.png" alt="sample"'>;
-// });
