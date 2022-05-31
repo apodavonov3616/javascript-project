@@ -1,6 +1,5 @@
 
 const Buttons = require("./scripts/buttons")
-// const Slider = require("./scripts/slider")
 const Squat = require("./scripts/squat")
 const Bench = require("./scripts/bench")
 const Deadlift = require("./scripts/deadlift")
@@ -34,10 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector('.our_container').addEventListener('click', event => {
 
-        // Check if the clicked element was actually a .remove-button
         if (event.target.matches('#next')) {
-            // event.target.closest('.todo-item').remove();
-            // console.log(squat_instance)
             if ($current_exercise === "Squat"){
                 squat_instance.nextImage()
             } else if ($current_exercise === "Bench"){
@@ -57,28 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const DUMMY_DATA = exertion[0]["Squat"][2]
-
-    // const DUMMY_DATA = [
-    //     { id: 'd1', muscle: 'USA', value:10 },
-    //     { id: 'd2', region: 'India', value:12 },
-    //     { id: 'd3', region: 'China', value:11 },
-    //     { id: 'd4', region: 'Germany', value:6 },
-    // ]
-
-    // const DUMMY_DATA = [
-    //     {muscle: "Biceps", value: 0},
-    //     {muscle: "Latissimus Dorsi", value: 0},
-    //     {muscle: "Erector Spinae", value: 1},
-    //     {muscle: "Trapezius", value: 0},
-    //     {muscle: "Deltoids", value: 0},
-    //     {muscle: "Triceps", value: 0},
-    //     {muscle: "Pectorals", value: 0},
-    //     {muscle: "Abdominals", value: 0},
-    //     {muscle: "Glutes", value: 0},
-    //     {muscle: "Quadriceps", value: 0},
-    //     {muscle: "Hamstrings", value: 0},
-    //     {muscle: "Calves", value: 0}
-    // ]
 
     const MARGINS = {top: 20, bottom:10};
     const CHART_WIDTH = 1000;
@@ -120,6 +94,5 @@ document.addEventListener("DOMContentLoaded", () => {
         .attr('y', data => y(data.value)-20)
         .attr('text-anchor', 'middle')
         .classed('label', true)
-
 })
 
