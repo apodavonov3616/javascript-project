@@ -56,22 +56,22 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    const DUMMY_DATA = [exertion[0]["Squat"][1]]
+    // const DUMMY_DATA = [exertion[0]["Squat"][1]]
 
-    // const DUMMY_DATA = [
-    //     {muscle: "Biceps", value: 0},
-    //     {muscle: "Latissimus Dorsi", value: 0},
-    //     {muscle: "Erector Spinae", value: 1},
-    //     {muscle: "Trapezius", value: 0},
-    //     {muscle: "Deltoids", value: 0},
-    //     {muscle: "Triceps", value: 0},
-    //     {muscle: "Pectorals", value: 0},
-    //     {muscle: "Abdominals", value: 0},
-    //     {muscle: "Glutes", value: 0},
-    //     {muscle: "Quadriceps", value: 0},
-    //     {muscle: "Hamstrings", value: 0},
-    //     {muscle: "Calves", value: 0}
-    // ]
+    const DUMMY_DATA = [
+        {muscle: "Biceps", value: 0},
+        {muscle: "Latissimus Dorsi", value: 0},
+        {muscle: "Erector Spinae", value: 1},
+        {muscle: "Trapezius", value: 0},
+        {muscle: "Deltoids", value: 0},
+        {muscle: "Triceps", value: 0},
+        {muscle: "Pectorals", value: 0},
+        {muscle: "Abdominals", value: 0},
+        {muscle: "Glutes", value: 0},
+        {muscle: "Quadriceps", value: 0},
+        {muscle: "Hamstrings", value: 0},
+        {muscle: "Calves", value: 0}
+    ]
 
     console.log(exertion[0]["Squat"][1][0])
     console.log(DUMMY_DATA)
