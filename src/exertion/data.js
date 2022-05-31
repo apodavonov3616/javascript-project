@@ -1,4 +1,4 @@
-exertion = [
+export let exertion = [
     {
         "Squat": {
             1: {

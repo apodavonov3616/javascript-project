@@ -45,3 +45,7 @@ h1 {
   color: rgba(49, 12, 216, 0.568);
   transform: scale(1.4);
 }
+
+.bar {
+  fill: purple;
+}
