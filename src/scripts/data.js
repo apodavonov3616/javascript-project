@@ -1,4 +1,4 @@
-export let exertion = {
+export const exertion = [{
     "Squat": {
         1: [
             {muscle: "Biceps", value: 0},
@@ -16,7 +16,7 @@ export let exertion = {
         ],
         2: [
             {muscle: "Biceps", value:0},
-            {muscle: "Latissimus Dorsi", value: 0},
+            {muscle: "Latissimus Dorsi", value: 2},
             {muscle: "Erector Spinae", value: 0},
             {muscle: "Trapezius", value: 0},
             {muscle: "Deltoids", value: 0},
@@ -299,4 +299,4 @@ export let exertion = {
             {muscle: "Calves", value: 0}
         ],
     }
-}
+}]
