@@ -74,6 +74,7 @@ class Deadlift {
             this.$current_image_number = this.$current_image_number - 1
         }
         this.renderCurrentImage(this.ctx, ((this.$current_image_number) % 7))
+        return this.$current_image_number % 7
     }
 }
 

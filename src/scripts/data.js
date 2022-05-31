@@ -101,7 +101,7 @@ export const exertion = [{
     },
     "Bench": {
         1: [
-            {muscle: "Biceps", value:0},
+            {muscle: "Biceps", value:3},
             {muscle: "Latissimus Dorsi", value: 0},
             {muscle: "Erector Spinae", value: 0},
             {muscle: "Trapezius", value: 0},
@@ -201,7 +201,7 @@ export const exertion = [{
     },
     "Deadlift": {
         1: [
-            {muscle: "Biceps", value:0},
+            {muscle: "Biceps", value:4},
             {muscle: "Latissimus Dorsi", value: 0},
             {muscle: "Erector Spinae", value: 0},
             {muscle: "Trapezius", value: 0},

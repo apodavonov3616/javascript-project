@@ -57,11 +57,17 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         } else {
             if ($current_exercise === "Squat"){
-                squat_instance.lastImage()
+                let $exercise_number = squat_instance.lastImage()
+                d3.select("g").remove()
+                chartRender("Squat", $exercise_number+1)
             } else if ($current_exercise === "Bench"){
-                bench_instance.lastImage()
+                let $exercise_number = bench_instance.lastImage()
+                d3.select("g").remove()
+                chartRender("Bench", $exercise_number+1)
             } else {
-                deadlift_instance.lastImage()
+                let $exercise_number = deadlift_instance.lastImage()
+                d3.select("g").remove()
+                chartRender("Deadlift", $exercise_number+1)
             }
         }
     });
