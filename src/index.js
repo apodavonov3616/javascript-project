@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .attr('height', CHART_HEIGHT + MARGINS.top + MARGINS.bottom);
 
             x.domain(DUMMY_DATA.map((d) => d.muscle));
-            y.domain([0, d3.max(DUMMY_DATA, d=> d.value) + 3])
+            y.domain([0, 12])
 
         const chart = chartContainer.append('g');
 
