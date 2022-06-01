@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-around;
   position: relative;
-  left: 6%;
+  left: 5%;
 }
 
 #next:hover, #back:hover {

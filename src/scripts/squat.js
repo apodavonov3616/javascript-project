@@ -33,7 +33,10 @@ class Squat {
         }
 
         //draw circle here
-
+        ctx.beginPath();
+        ctx.fillStyle = "red";
+        ctx.arc(100, 100, 40, 0, 2* Math.PI)
+        ctx.closePath();
 
         let container = document.querySelector('.our_container')
 
