@@ -55,7 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 d3.select("g").remove()
                 chartRender("Deadlift", $exercise_number+1)
             }
-        } else {
+        } 
+        if (event.target.matches('#back')) {
             if ($current_exercise === "Squat"){
                 let $exercise_number = squat_instance.lastImage()
                 d3.select("g").remove()
@@ -78,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const MARGINS = {top: 20, bottom:10};
         const CHART_WIDTH = 1000;
-        const CHART_HEIGHT = 400 - MARGINS.top - MARGINS.bottom;
+        const CHART_HEIGHT = 300 - MARGINS.top - MARGINS.bottom;
 
         const x = d3.scaleBand().rangeRound([0, CHART_WIDTH]).padding(0.2);
         const y = d3.scaleLinear().range([CHART_HEIGHT, 0]);

@@ -22,7 +22,7 @@ class Chart {
     
 
         const MARGINS = {top: 20, bottom:10};
-        const CHART_WIDTH = 1000;
+        const CHART_WIDTH = 800;
         const CHART_HEIGHT = 400 - MARGINS.top - MARGINS.bottom;
 
         const x = d3.scaleBand().rangeRound([0, CHART_WIDTH]).padding(0.1);
