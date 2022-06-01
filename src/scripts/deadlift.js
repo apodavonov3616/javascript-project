@@ -11,6 +11,20 @@ class Deadlift {
         "./assets/deadlift_pics/00007.png"
     ]
 
+    deadlift_recommendation = [
+        "Step 1: First take a deep breath in and contract your lats.",
+        "Step 2: Push off the ground very hard. Strong deadlifters know a good blastoff is important.",
+        "Step 3: Keep pushing. Instead of thinking about pulling the weight up, push the ground down.",
+        "Step 4: The most difficult point is commonly right before the knees. After that, it gets easier.",
+        "Step 5: Push your hips in!",
+        "Step 6: The upper back is especially important for the lockout.",
+        "Step 7: Standing up while holding the bar concludes your deadlift!",
+    ]
+
+    recommendation($exercise_number) {
+        return this.deadlift_recommendation[$exercise_number]
+    }
+
     constructor() {
 
         const canvasEl = document.getElementById("canvas");

@@ -12,13 +12,13 @@ class Squat {
     ]
 
     squat_recommendation = [
-        "squatting part 1",
-        "squatting part 2",
-        "squatting part 3",
-        "squatting part 4",
-        "squatting part 5",
-        "squatting part 6",
-        "squatting part 7",
+        "Step 1: Take a deep breath in and make your back and abdominals rigid.",
+        "Step 2: Push hips back and have knees bend as a response, not the other way around.",
+        "Step 3: While still keeping back straight, descend slowly into the bottom position.",
+        "Step 4: When at bottom, accelerate quickly upward. More speed = more power.",
+        "Step 5: A common mistake is not focusing on pushing hips forward. This is key.",
+        "Step 6: Keep driving. If you got here, you can definitely finish the motion.",
+        "Step 7: Standing up straight concludes your squat!",
     ]
 
     recommendation($exercise_number) {

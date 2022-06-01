@@ -11,6 +11,20 @@ class Bench {
         "./assets/bench_pics/00007.png"
     ]
 
+    bench_recommendation = [
+        "Step 1: Arch your back and take a deep breath in.",
+        "Step 2: Descend slowly. Heavy weights can descend quicker than you think.",
+        "Step 3: The range of motion isn't up and down. Rather, the bar moves closer to feet.",
+        "Step 4: Once at the bottom, use the force of your feet to send energy along your body to push.",
+        "Step 5: Push hard with chest and triceps while still following the arched path.",
+        "Step 6: Once at this position, the lift is much easier. Finish the movement.",
+        "Step 7: Locking out your elbows concludes your bench!",
+    ]
+
+    recommendation($exercise_number) {
+        return this.bench_recommendation[$exercise_number]
+    }
+
     constructor() {
 
         const canvasEl = document.getElementById("canvas");

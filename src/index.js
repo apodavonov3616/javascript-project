@@ -13,7 +13,7 @@ console.log(d3)
 
 
 
-let textbox = "testing123"
+let textbox = ""
 
 document.addEventListener("DOMContentLoaded", () => {
 
