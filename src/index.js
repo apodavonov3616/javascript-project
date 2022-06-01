@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 
-    document.querySelector('button').addEventListener('click', e => {
+    document.addEventListener('click', e => {
 
         var element = document.getElementById("readme");
         while (element.hasChildNodes()) {
