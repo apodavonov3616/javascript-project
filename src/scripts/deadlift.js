@@ -17,7 +17,7 @@ class Deadlift {
         canvasEl.width = 400;
         canvasEl.height = 600;
         const ctx = canvasEl.getContext("2d");
-        ctx.fillStyle = "black";
+        // ctx.fillStyle = "black";
         ctx.fillRect(0, 0, 400, 600);
         this.$current_image_number = 0
         this.renderCurrentImage(ctx, this.$current_image_number)

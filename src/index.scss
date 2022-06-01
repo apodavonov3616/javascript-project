@@ -2,6 +2,23 @@
 @import "./styles/squat.scss";
 @import "./styles/deadlift.scss";
 
+#divider2 {
+    position: relative;
+    // bottom: 30%;
+    left: 40%;
+    bottom: 600px
+}
+
+#divider1 {
+    position: relative;
+    left: 10%;
+    top: 60px;
+}
+
+.bar:hover {
+    fill: yellow;
+  }
+
 text {
     font-size: 1.6em;
 }
