@@ -32,6 +32,9 @@ class Squat {
             ctx.drawImage(img, 0, 0)
         }
 
+        //draw circle here
+
+
         let container = document.querySelector('.our_container')
 
         let buttonSubmit = document.getElementsByClassName("change")
