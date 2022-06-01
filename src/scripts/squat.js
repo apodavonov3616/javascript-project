@@ -11,7 +11,21 @@ class Squat {
         "./assets/squat_pics/00007.png"
     ]
 
-    constructor() {
+    squat_recommendation = [
+        "squatting part 1",
+        "squatting part 2",
+        "squatting part 2",
+        "squatting part 2",
+        "squatting part 2",
+        "squatting part 2",
+        "squatting part 2",
+    ]
+
+    recommendation($exercise_number) {
+        return this.squat_recommendation[$exercise_number]
+    }
+
+    constructor(textbox) {
 
         const canvasEl = document.getElementById("canvas");
         canvasEl.width = 400;
@@ -20,23 +34,24 @@ class Squat {
         // ctx.fillStyle = "grey";
         ctx.fillRect(0, 0, 350, 600);
         this.$current_image_number = 0
+        textbox = this.squat_recommendation[0]
+        console.log(textbox)
         this.renderCurrentImage(ctx, this.$current_image_number)
         this.ctx = ctx
     }
 
     renderCurrentImage(ctx, number) {
-
         let img = new Image();
         img.src = this.squat_picture_sources[number]
         img.onload = function () {
-            ctx.drawImage(img, 0, 0)
+            ctx.drawImage(img, 0, 0);
         }
 
         //draw circle here
-        ctx.beginPath();
-        ctx.fillStyle = "red";
-        ctx.arc(100, 100, 40, 0, 2* Math.PI)
-        ctx.closePath();
+        // ctx.beginPath();
+        // ctx.fillStyle = "red";
+        // ctx.arc(100, 100, 40, 0, 2* Math.PI)
+        // ctx.closePath();
 
         let container = document.querySelector('.our_container')
 
@@ -65,10 +80,6 @@ class Squat {
         y.appendChild(u);
         document.body.appendChild(y);
         container.appendChild(y)
-    }
-
-    hello() {
-        console.log('squatting a lot')
     }
 
     nextImage() {

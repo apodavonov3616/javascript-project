@@ -1,4 +1,3 @@
-
 const Buttons = require("./scripts/buttons")
 const Squat = require("./scripts/squat")
 const Bench = require("./scripts/bench")
@@ -12,14 +11,18 @@ console.log(exertion[0]["Squat"][1])
 console.log("webpack is working")
 console.log(d3)
 
+
+
+let textbox = "testing123"
+
 document.addEventListener("DOMContentLoaded", () => {
 
     let main_controller = new MainController()
-    console.log("hello")
+    //will clear readme here
     let $current_exercise = "squat"
 
     document.getElementById("Squat").addEventListener("click", function () {
-        main_controller.makeImage("Squat");
+        main_controller.makeImage("Squat", textbox);
         $current_exercise = "Squat"
         d3.select("g").remove()
         chartRender("Squat", 1)
@@ -38,11 +41,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
+
     document.querySelector('.our_container').addEventListener('click', event => {
 
         if (event.target.matches('#next')) {
             if ($current_exercise === "Squat"){
                 let $exercise_number = squat_instance.nextImage()
+                let textbox = squat_instance.recommendation($exercise_number)
+                console.log(textbox)
                 console.log($exercise_number)
                 d3.select("g").remove()
                 chartRender("Squat", $exercise_number+1)
@@ -118,9 +124,30 @@ document.addEventListener("DOMContentLoaded", () => {
             .attr('text-anchor', 'middle')
             .classed('label', true)
     }
+    
+    document.querySelector('#canvas').addEventListener('mouseover', function() {
 
-    // let chart_instance = new Chart() 
-    // console.log(chart_instance)
-    // console.log(chart_instance.chartRender)
+        let element = document.getElementById("canvas_text");
+
+        // element.text
+        element.style.opacity = 1.0
+        const textNode = document.createTextNode(textbox); //change this to make it flexible
+
+        element.style.color = "white";
+        element.style.fontSize = "30px";
+        element.appendChild(textNode);
+        
+    })
+
+    document.querySelector('#canvas').addEventListener('mouseout', e => {
+
+        var element = document.getElementById("canvas_text");
+        element.style.opacity = 1.0
+        while (element.hasChildNodes()) {
+        element.removeChild(element.firstChild);}
+        
+    })
+
+
 })
 

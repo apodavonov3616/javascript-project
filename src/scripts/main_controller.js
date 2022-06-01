@@ -9,9 +9,10 @@ class MainController {
 
     }
 
-    makeImage(exercise) {
+    makeImage(exercise, textbox) {
         if (exercise === "Squat") {
-            squat_instance = new Squat()
+            squat_instance = new Squat(textbox)
+            console.log(textbox)
         } else if (exercise === "Bench") {
             bench_instance = new Bench()
         } else {

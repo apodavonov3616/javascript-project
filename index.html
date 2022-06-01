@@ -47,7 +47,8 @@
 
       <div class="dividers" id="divider1">
 
-        <canvas id="canvas"></canvas>
+        <canvas id="canvas">
+        </canvas>
 
         <div class="our_container">
         </div>
@@ -63,9 +64,60 @@
             <ul></ul>
           </div>
         </div>
+
+        <div id="canvas_text" color="white">
+        </div>
       </div>
 
-    </div>
+  </div>
+
+    <style>
+      .container {
+        position: relative;
+        width: 50%;
+      }
+      
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+      
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      .container:hover .image {
+        opacity: 0.3;
+      }
+      .container:hover .middle {
+        opacity: 1;
+      }
+      
+      .text {
+        /* background-color: #04AA6D; */
+        color: white;
+        font-size: 20px;
+        /* padding: 16px 32px; */
+      }
+      </style>
+
+    <div class="container">
+      <img src="./assets/last_button.png" alt="Avatar" class="image" style="width:100%">
+    <div class="middle">
+    <div class="text">John Doe</div>
+  </div>
+
   </body>
 
 </html>

@@ -66,6 +66,10 @@ body {
     justify-content: center;
 }
 
+#canvas:hover{
+    opacity: 0.2
+}
+
 button {
     display: flex;
     justify-content: flex-end;
