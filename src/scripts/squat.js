@@ -14,11 +14,11 @@ class Squat {
     squat_recommendation = [
         "squatting part 1",
         "squatting part 2",
-        "squatting part 2",
-        "squatting part 2",
-        "squatting part 2",
-        "squatting part 2",
-        "squatting part 2",
+        "squatting part 3",
+        "squatting part 4",
+        "squatting part 5",
+        "squatting part 6",
+        "squatting part 7",
     ]
 
     recommendation($exercise_number) {

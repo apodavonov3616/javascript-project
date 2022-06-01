@@ -47,17 +47,17 @@ document.addEventListener("DOMContentLoaded", () => {
         if (event.target.matches('#next')) {
             if ($current_exercise === "Squat"){
                 let $exercise_number = squat_instance.nextImage()
-                let textbox = squat_instance.recommendation($exercise_number)
-                console.log(textbox)
-                console.log($exercise_number)
+                textbox = squat_instance.recommendation($exercise_number)
                 d3.select("g").remove()
                 chartRender("Squat", $exercise_number+1)
             } else if ($current_exercise === "Bench"){
                 let $exercise_number = bench_instance.nextImage()
+                textbox = bench_instance.recommendation($exercise_number)
                 d3.select("g").remove()
                 chartRender("Bench", $exercise_number+1)
             } else {
                 let $exercise_number = deadlift_instance.nextImage()
+                textbox = deadlift_instance.recommendation($exercise_number)
                 d3.select("g").remove()
                 chartRender("Deadlift", $exercise_number+1)
             }
