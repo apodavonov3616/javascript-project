@@ -6,6 +6,10 @@
   padding: 20px;
 }
 
+body {
+  background: url(https://evercon.in/images/sele_baground.jpg) repeat, #7abcff;
+}
+
 #canvas {
   position: none;
   z-index: 1;
