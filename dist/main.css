@@ -6,6 +6,10 @@
   padding: 20px;
 }
 
+text {
+  font-size: 1.6em;
+}
+
 body {
   background: url(https://evercon.in/images/sele_baground.jpg) repeat, #7abcff;
 }
@@ -13,8 +17,10 @@ body {
 #canvas {
   position: none;
   z-index: 1;
-  height: 30%;
-  width: 30%;
+  height: 20%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
 }
 
 button {
@@ -24,7 +30,7 @@ button {
 }
 
 h1 {
-  color: beige;
+  color: rgb(191, 189, 189);
   display: flex;
   justify-content: center;
   font-size: 50px;
@@ -37,7 +43,6 @@ h1 {
 }
 
 .Exercise {
-  font-style: italic;
   background: rgba(255, 166, 0, 0);
   color: salmon;
   font-size: 30px;
@@ -46,10 +51,11 @@ h1 {
 }
 
 .Exercise:hover {
-  color: rgba(49, 12, 216, 0.568);
+  font-style: italic;
+  color: yellow;
   transform: scale(1.4);
 }
 
 .bar {
-  fill: purple;
+  fill: yellow;
 }

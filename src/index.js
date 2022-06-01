@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const CHART_WIDTH = 1000;
         const CHART_HEIGHT = 400 - MARGINS.top - MARGINS.bottom;
 
-        const x = d3.scaleBand().rangeRound([0, CHART_WIDTH]).padding(0.1);
+        const x = d3.scaleBand().rangeRound([0, CHART_WIDTH]).padding(0.2);
         const y = d3.scaleLinear().range([CHART_HEIGHT, 0]);
 
         const chartContainer = d3.select('svg')
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
         chart.append('g')
             .call(d3.axisBottom(x).tickSizeOuter(0))
             .attr('transform', `translate(0, ${CHART_HEIGHT})`)
-            .attr('color', 'purple')
+            .attr('color', 'rgb(191, 189, 189)')
 
         chart.selectAll('.bar')
             .data(DUMMY_DATA)
