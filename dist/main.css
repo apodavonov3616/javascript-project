@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-around;
   position: relative;
-  left: 7%;
+  left: 6%;
 }
 
 #next:hover, #back:hover {
@@ -58,7 +58,7 @@ button {
 }
 
 body {
-  background: url(https://evercon.in/images/sele_baground.jpg);
+  background: url(https://cdn.wallpapersafari.com/25/4/eLumlI.png);
 }
 
 #canvas {
