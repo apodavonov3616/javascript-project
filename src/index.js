@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         textbox = squat_instance.recommendation(0)
         d3.select("g").remove()
         chartRender("Squat", 1)
+
     });
     document.getElementById("Bench").addEventListener("click", function () {
         main_controller.makeImage("Bench");
@@ -155,5 +156,12 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 
+    document.querySelector('button').addEventListener('click', e => {
+
+        var element = document.getElementById("readme");
+        while (element.hasChildNodes()) {
+        element.removeChild(element.firstChild);}
+        
+    })
 })
 
