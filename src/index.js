@@ -24,18 +24,21 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("Squat").addEventListener("click", function () {
         main_controller.makeImage("Squat", textbox);
         $current_exercise = "Squat"
+        textbox = squat_instance.recommendation(0)
         d3.select("g").remove()
         chartRender("Squat", 1)
     });
     document.getElementById("Bench").addEventListener("click", function () {
         main_controller.makeImage("Bench");
         $current_exercise = "Bench"
+        textbox = bench_instance.recommendation(0)
         d3.select("g").remove()
         chartRender("Bench", 1)
     });
     document.getElementById("Deadlift").addEventListener("click", function () {
         main_controller.makeImage("Deadlift");
         $current_exercise = "Deadlift"
+        textbox = deadlift_instance.recommendation(0)
         d3.select("g").remove()
         chartRender("Deadlift", 1)
     });
@@ -65,14 +68,17 @@ document.addEventListener("DOMContentLoaded", () => {
         if (event.target.matches('#back')) {
             if ($current_exercise === "Squat"){
                 let $exercise_number = squat_instance.lastImage()
+                textbox = squat_instance.recommendation($exercise_number)
                 d3.select("g").remove()
                 chartRender("Squat", $exercise_number+1)
             } else if ($current_exercise === "Bench"){
                 let $exercise_number = bench_instance.lastImage()
+                textbox = bench_instance.recommendation($exercise_number)
                 d3.select("g").remove()
                 chartRender("Bench", $exercise_number+1)
             } else {
                 let $exercise_number = deadlift_instance.lastImage()
+                textbox = deadlift_instance.recommendation($exercise_number)
                 d3.select("g").remove()
                 chartRender("Deadlift", $exercise_number+1)
             }
