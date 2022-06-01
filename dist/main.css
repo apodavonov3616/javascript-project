@@ -6,11 +6,33 @@
   padding: 20px;
 }
 
+.our_container {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 7%;
+}
+
+#next:hover, #back:hover {
+  font-style: italic;
+  color: yellow;
+  transform: scale(1.4);
+}
+
+.our_container > button {
+  width: 50px;
+}
+
 #divider2 {
   position: relative;
   left: 40%;
   bottom: 530px;
   z-index: 1;
+}
+
+.our_container {
+  color: yellow;
 }
 
 #divider1 {
@@ -52,6 +74,14 @@ button {
   display: flex;
   justify-content: flex-end;
   z-index: 100;
+}
+
+#back, #next {
+  background: rgba(255, 166, 0, 0);
+  color: rgb(191, 189, 189);
+  font-size: 25px;
+  border: transparent;
+  padding: 10px 20px;
 }
 
 h1 {
