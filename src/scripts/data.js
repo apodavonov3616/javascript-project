@@ -101,18 +101,18 @@ export const exertion = [{
     },
     "Bench": {
         1: [
-            {muscle: "Biceps", value:3},
-            {muscle: "Latissimus Dorsi", value: 0},
-            {muscle: "Erector Spinae", value: 0},
-            {muscle: "Trapezius", value: 0},
-            {muscle: "Deltoids", value: 0},
-            {muscle: "Triceps", value: 0},
-            {muscle: "Pectorals", value: 0},
-            {muscle: "Abdominals", value: 0},
-            {muscle: "Glutes", value: 0},
-            {muscle: "Quadriceps", value: 0},
-            {muscle: "Hamstrings", value: 0},
-            {muscle: "Calves", value: 0}
+            {muscle: "Biceps", value:4},
+            {muscle: "Latissimus Dorsi", value: 4},
+            {muscle: "Erector Spinae", value: 3},
+            {muscle: "Trapezius", value: 2},
+            {muscle: "Deltoids", value: 4},
+            {muscle: "Triceps", value: 4},
+            {muscle: "Pectorals", value: 4},
+            {muscle: "Abdominals", value: 2},
+            {muscle: "Glutes", value: 1},
+            {muscle: "Quadriceps", value: 1},
+            {muscle: "Hamstrings", value: 1},
+            {muscle: "Calves", value: 1}
         ],
         2: [
             {muscle: "Biceps", value:0},
@@ -143,18 +143,18 @@ export const exertion = [{
             {muscle: "Calves", value: 0}
         ],
         4: [
-            {muscle: "Biceps", value:0},
-            {muscle: "Latissimus Dorsi", value: 0},
-            {muscle: "Erector Spinae", value: 0},
-            {muscle: "Trapezius", value: 0},
-            {muscle: "Deltoids", value: 0},
-            {muscle: "Triceps", value: 0},
-            {muscle: "Pectorals", value: 0},
-            {muscle: "Abdominals", value: 0},
-            {muscle: "Glutes", value: 0},
-            {muscle: "Quadriceps", value: 0},
-            {muscle: "Hamstrings", value: 0},
-            {muscle: "Calves", value: 0}
+            {muscle: "Biceps", value: 2},
+            {muscle: "Latissimus Dorsi", value: 4},
+            {muscle: "Erector Spinae", value: 3},
+            {muscle: "Trapezius", value: 2},
+            {muscle: "Deltoids", value: 8},
+            {muscle: "Triceps", value: 10},
+            {muscle: "Pectorals", value: 10},
+            {muscle: "Abdominals", value: 2},
+            {muscle: "Glutes", value: 2},
+            {muscle: "Quadriceps", value: 3},
+            {muscle: "Hamstrings", value: 1},
+            {muscle: "Calves", value: 3}
         ],
         5: [
             {muscle: "Biceps", value:0},
@@ -185,18 +185,18 @@ export const exertion = [{
             {muscle: "Calves", value: 0}
         ],
         7: [
-            {muscle: "Biceps", value:0},
-            {muscle: "Latissimus Dorsi", value: 0},
-            {muscle: "Erector Spinae", value: 0},
-            {muscle: "Trapezius", value: 0},
-            {muscle: "Deltoids", value: 0},
-            {muscle: "Triceps", value: 0},
-            {muscle: "Pectorals", value: 0},
-            {muscle: "Abdominals", value: 0},
-            {muscle: "Glutes", value: 0},
-            {muscle: "Quadriceps", value: 0},
-            {muscle: "Hamstrings", value: 0},
-            {muscle: "Calves", value: 0}
+            {muscle: "Biceps", value:4},
+            {muscle: "Latissimus Dorsi", value: 4},
+            {muscle: "Erector Spinae", value: 3,
+            {muscle: "Trapezius", value: 2},
+            {muscle: "Deltoids", value: 5},
+            {muscle: "Triceps", value: 5},
+            {muscle: "Pectorals", value: 5},
+            {muscle: "Abdominals", value: 2},
+            {muscle: "Glutes", value: 1},
+            {muscle: "Quadriceps", value: 1},
+            {muscle: "Hamstrings", value: 1},
+            {muscle: "Calves", value: 1}
         ],
     },
     "Deadlift": {
