@@ -2,13 +2,13 @@ class Bench {
     $current_image_number = null
 
     bench_picture_sources = [
-        "../src/images/bench_pics/00001.png",
-        "../src/images/bench_pics/00002.png",
-        "../src/images/bench_pics/00003.png",
-        "../src/images/bench_pics/00004.png",
-        "../src/images/bench_pics/00005.png",
-        "../src/images/bench_pics/00006.png",
-        "../src/images/bench_pics/00007.png"
+        "./assets/bench_pics/00001.png",
+        "./assets/bench_pics/00002.png",
+        "./assets/bench_pics/00003.png",
+        "./assets/bench_pics/00004.png",
+        "./assets/bench_pics/00005.png",
+        "./assets/bench_pics/00006.png",
+        "./assets/bench_pics/00007.png"
     ]
 
     constructor() {

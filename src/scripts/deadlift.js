@@ -2,13 +2,13 @@ class Deadlift {
     $current_image_number = null
 
     deadlift_picture_sources = [
-        "../src/images/deadlift_pics/00001.png",
-        "../src/images/deadlift_pics/00002.png",
-        "../src/images/deadlift_pics/00003.png",
-        "../src/images/deadlift_pics/00004.png",
-        "../src/images/deadlift_pics/00005.png",
-        "../src/images/deadlift_pics/00006.png",
-        "../src/images/deadlift_pics/00007.png"
+        "./assets/deadlift_pics/00001.png",
+        "./assets/deadlift_pics/00002.png",
+        "./assets/deadlift_pics/00003.png",
+        "./assets/deadlift_pics/00004.png",
+        "./assets/deadlift_pics/00005.png",
+        "./assets/deadlift_pics/00006.png",
+        "./assets/deadlift_pics/00007.png"
     ]
 
     constructor() {

@@ -2,13 +2,13 @@ class Squat {
     $current_image_number = null
 
     squat_picture_sources = [
-        "../src/images/squat_pics/00001.png",
-        "../src/images/squat_pics/00002.png",
-        "../src/images/squat_pics/00003.png",
-        "../src/images/squat_pics/00004.png",
-        "../src/images/squat_pics/00005.png",
-        "../src/images/squat_pics/00006.png",
-        "../src/images/squat_pics/00007.png"
+        "./assets/squat_pics/00001.png",
+        "./assets/squat_pics/00002.png",
+        "./assets/squat_pics/00003.png",
+        "./assets/squat_pics/00004.png",
+        "./assets/squat_pics/00005.png",
+        "./assets/squat_pics/00006.png",
+        "./assets/squat_pics/00007.png"
     ]
 
     constructor() {
