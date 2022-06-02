@@ -15,7 +15,7 @@ class Deadlift {
         "Step 1: First take a deep breath in and contract your lats.",
         "Step 2: Push off the ground very hard. Good blastoff is necessary.",
         "Step 3: Instead of thinking about pulling the weight up, push the ground down.",
-        "Step 4: Keep following a straight upward bar path",
+        "Step 4: Keep following a straight upward bar path.",
         "Step 5: Push your hips in!",
         "Step 6: The upper back is especially important for the lockout.",
         "Step 7: Standing up while holding the bar concludes your deadlift!",

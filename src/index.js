@@ -100,11 +100,21 @@ document.addEventListener("DOMContentLoaded", () => {
         const chartContainer = d3.select('svg')
             .attr('width', CHART_WIDTH)
             .attr('height', CHART_HEIGHT + MARGINS.top + MARGINS.bottom);
+          
 
             x.domain(DUMMY_DATA.map((d) => d.muscle));
-            y.domain([0, 12])
+            y.domain([0, 17])
 
         const chart = chartContainer.append('g');
+
+        d3.select('svg')
+            .append("text")
+            .attr("x", 500)             
+            .attr("y", 50)
+            .attr("text-anchor", "middle")
+            .text("PERCEIVED LEVEL OF MUSCULAR EXERTION")
+            .style('fill', 'rgb(191, 189, 189)');
+            //change font
 
         chart.append('g')
             .call(d3.axisBottom(x).tickSizeOuter(0))
