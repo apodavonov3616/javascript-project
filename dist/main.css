@@ -125,6 +125,16 @@ h1 {
   transform: scale(1.4);
 }
 
+.container {
+  width: 250px;
+  height: 200px;
+  border: 1px solid salmon;
+}
+
 .bar {
-  fill: yellow;
+  fill: salmon;
+}
+
+.label {
+  fill: rgb(191, 189, 189);
 }

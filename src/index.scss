@@ -94,14 +94,6 @@ h2 {
     padding: 50px 100px
 }
 
-// #next {
-//     background: rgba(255, 166, 0, 0);
-//     color: rgb(191, 189, 189);
-//     font-size: 25px;
-//     border: transparent;
-//     padding: 10px 20px;
-// }
-
 
 
 h1 {
@@ -127,12 +119,21 @@ h1 {
 }
 
 .Exercise:hover {
-    // background-color:rgba(216, 12, 12, 0.568);
     font-style: italic;
     color: yellow;
     transform: scale(1.4)
 }
 
+.container {
+    width: 250px;
+    height: 200px;
+    border: 1px solid salmon;
+  }
+
 .bar {
-    fill: yellow;
+    fill: salmon;
+}
+
+.label {
+    fill: rgb(191, 189, 189);
 }

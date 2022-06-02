@@ -1,16 +1,8 @@
-const Buttons = require("./scripts/buttons")
 const Squat = require("./scripts/squat")
 const Bench = require("./scripts/bench")
 const Deadlift = require("./scripts/deadlift")
 const MainController = require("./scripts/main_controller")
 const {exertion} = require("./scripts/data");
-const Chart = require("./scripts/chart")
-console.log(exertion[0]["Squat"][1])
-
-
-console.log("webpack is working")
-console.log(d3)
-
 
 
 let textbox = ""
@@ -18,7 +10,6 @@ let textbox = ""
 document.addEventListener("DOMContentLoaded", () => {
 
     let main_controller = new MainController()
-    //will clear readme here
     let $current_exercise = "squat"
 
     document.getElementById("Squat").addEventListener("click", function () {
@@ -114,7 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
             .attr("text-anchor", "middle")
             .text("PERCEIVED LEVEL OF MUSCULAR EXERTION")
             .style('fill', 'rgb(191, 189, 189)');
-            //change font
 
         chart.append('g')
             .call(d3.axisBottom(x).tickSizeOuter(0))
@@ -146,9 +136,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let element = document.getElementById("canvas_text");
 
-        // element.text
         element.style.opacity = 1.0
-        const textNode = document.createTextNode(textbox); //change this to make it flexible
+        const textNode = document.createTextNode(textbox);
 
         element.style.color = "white";
         element.style.fontSize = "30px";

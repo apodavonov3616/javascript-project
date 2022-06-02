@@ -31,7 +31,6 @@ class Squat {
         canvasEl.width = 400;
         canvasEl.height = 600;
         const ctx = canvasEl.getContext("2d");
-        // ctx.fillStyle = "grey";
         ctx.fillRect(0, 0, 350, 600);
         this.$current_image_number = 0
         textbox = this.squat_recommendation[0]
@@ -46,12 +45,6 @@ class Squat {
         img.onload = function () {
             ctx.drawImage(img, 0, 0);
         }
-
-        //draw circle here
-        // ctx.beginPath();
-        // ctx.fillStyle = "red";
-        // ctx.arc(100, 100, 40, 0, 2* Math.PI)
-        // ctx.closePath();
 
         let container = document.querySelector('.our_container')
 
@@ -74,7 +67,6 @@ class Squat {
         container.appendChild(x)
 
         var y = document.createElement("BUTTON");
-        // y.classList.add("change");
         y.setAttribute("id", "next")
         var u = document.createTextNode("Next");
         y.appendChild(u);
