@@ -34,7 +34,6 @@ class Squat {
         ctx.fillRect(0, 0, 350, 600);
         this.$current_image_number = 0
         textbox = this.squat_recommendation[0]
-        console.log(textbox)
         this.renderCurrentImage(ctx, this.$current_image_number)
         this.ctx = ctx
     }
