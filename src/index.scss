@@ -2,6 +2,13 @@
 @import "./styles/squat.scss";
 @import "./styles/deadlift.scss";
 
+.profile{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+
 .our_container {
     width: 200px;
     display: flex;
