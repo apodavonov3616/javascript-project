@@ -2,10 +2,11 @@
 // @import "./styles/squat.scss";
 // @import "./styles/deadlift.scss";
 
-.profile{
+.profile {
     position: absolute;
-    top: 1%;
+    top: 2%;
     right: 1%;
+    z-index: 10;
 }
 
 
@@ -17,13 +18,14 @@
     left: 5%;
 }
 
-#next:hover, #back:hover{
+#next:hover,
+#back:hover {
     font-style: italic;
     color: yellow;
     transform: scale(1.4)
 }
 
-.our_container > button {
+.our_container>button {
     width: 50px;
 }
 
@@ -47,16 +49,17 @@
 
 .bar:hover {
     fill: yellow;
-  }
+}
 
 text {
     font-size: 1.6em;
 }
 
-#chart{
+#chart {
     z-index: 99;
 }
-button{
+
+button {
     z-index: 5;
 }
 
@@ -64,7 +67,7 @@ body {
     background: url(https://cdn.wallpapersafari.com/25/4/eLumlI.png);
 }
 
-text{
+text {
     color: white;
 }
 
@@ -77,7 +80,7 @@ text{
     justify-content: center;
 }
 
-#canvas:hover{
+#canvas:hover {
     opacity: 0.2
 }
 
@@ -87,7 +90,8 @@ button {
     z-index: 100;
 }
 
-#back, #next {
+#back,
+#next {
     background: rgba(255, 166, 0, 0);
     color: rgb(191, 189, 189);
     font-size: 25px;
@@ -135,7 +139,7 @@ h1 {
     width: 250px;
     height: 200px;
     border: 1px solid salmon;
-  }
+}
 
 .bar {
     fill: salmon;
@@ -143,4 +147,9 @@ h1 {
 
 .label {
     fill: rgb(191, 189, 189);
+}
+
+#canvas_text {
+    position: relative;
+    top: 25px;
 }

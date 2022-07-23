@@ -3,8 +3,9 @@
   \*************************************************************************************************************************************/
 .profile {
   position: absolute;
-  top: 1%;
+  top: 2%;
   right: 1%;
+  z-index: 10;
 }
 
 .our_container {
@@ -15,13 +16,14 @@
   left: 5%;
 }
 
-#next:hover, #back:hover {
+#next:hover,
+#back:hover {
   font-style: italic;
   color: yellow;
   transform: scale(1.4);
 }
 
-.our_container > button {
+.our_container>button {
   width: 50px;
 }
 
@@ -85,7 +87,8 @@ button {
   z-index: 100;
 }
 
-#back, #next {
+#back,
+#next {
   background: rgba(255, 166, 0, 0);
   color: rgb(191, 189, 189);
   font-size: 25px;
@@ -124,6 +127,7 @@ h1 {
   font-style: italic;
   color: yellow;
   transform: scale(1.4);
+  cursor: pointer;
 }
 
 .container {
@@ -138,4 +142,9 @@ h1 {
 
 .label {
   fill: rgb(191, 189, 189);
+}
+
+#canvas_text {
+  position: relative;
+  top: 25px;
 }
