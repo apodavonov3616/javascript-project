@@ -26,4 +26,4 @@ the information that gets rendered: picture, tip, and chart data.
 
 
 ## Technologies:
-This demo utilizes vanilla javascript, HTML, CSS, D3.js, webpack, and canvas. The data and images were created by myself.
+This demo utilizes vanilla javascript, HTML, CSS, D3.js, webpack, and canvas. The ```data``` and images were created by myself.
