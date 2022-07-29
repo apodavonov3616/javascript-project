@@ -24,6 +24,20 @@ the information that gets rendered: picture, tip, and chart data.
 
 ![deadlift](deadlift-trim.gif)
 
+## Key Pointers in Code
+
+Whenever the exercise (ie. squat, bench, deadlift) option was clicked, that class connected to the 
+exercise rendered the first portion of a movement. The source of the image that is rendered on canvas
+also changed, causing the image on the website to change as well. Initially, the first tip is saved as a
+variable, and that variable changes based upon the current exercise and phase of exercise. 
+
+![image-2](powerlifting-visualizer-image-2.png)
+
+Once the next or last button is clicked, it prompts the class associated with the current lift to change its
+current image number and using ```%``` allows each button to be clicked indefinitely. Additionally, I passed
+this.ctx in order to not lose access to the canvas when creating the new photo.
+
+![image-1](powerlifting-visualizer-image-1.png)
 
 ## Technologies:
-This demo utilizes vanilla javascript, HTML, CSS, D3.js, webpack, and canvas. The ```data``` and images were created by myself.
+This demo utilizes ```vanilla javascript```, ```HTML```, ```CSS```, ```D3.js```, ```webpack```, and ```canvas```. The data and images were created by myself.
