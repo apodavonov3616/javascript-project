@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .attr("x", 500)
             .attr("y", 50)
             .attr("text-anchor", "middle")
-            .text("PERCEIVED LEVEL OF MUSCULAR EXERTION")
+            .text("PERCEIVED EXERTION OF MUSCLE (1-10)")
             .style('fill', 'rgb(191, 189, 189)');
 
         chart.append('g')
