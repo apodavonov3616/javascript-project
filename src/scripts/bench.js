@@ -12,13 +12,13 @@ class Bench {
     ]
 
     bench_recommendation = [
-        "Step 1: Arch your back and take a deep breath in.",
-        "Step 2: Descend slowly. Heavy weights can descend quicker than you think.",
-        "Step 3: On the way down, the bar moves SLIGHTLY closer to the feet.",
-        "Step 4: Use the force of your feet to send energy along your body to push.",
-        "Step 5: Push hard with chest and triceps while still following the arched path.",
-        "Step 6: Once at this position, the lift is much easier. Finish the movement.",
-        "Step 7: Locking out your elbows concludes your bench!",
+        "Step 1/7: Arch your back and take a deep breath in.",
+        "Step 2/7: Descend slowly. Heavy weights can descend quicker than you think.",
+        "Step 3/7: On the way down, the bar moves SLIGHTLY closer to the feet.",
+        "Step 4/7: Use the force of your feet to send energy along your body to push.",
+        "Step 5/7: Push hard with chest and triceps while still following the arched path.",
+        "Step 6/7: Once at this position, the lift is much easier. Finish the movement.",
+        "Step 7/7: Locking out your elbows concludes your bench!",
     ]
 
     recommendation($exercise_number) {

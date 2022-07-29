@@ -12,13 +12,13 @@ class Deadlift {
     ]
 
     deadlift_recommendation = [
-        "Step 1: First take a deep breath in and contract your lats.",
-        "Step 2: Push off the ground very hard. Good blastoff is necessary.",
-        "Step 3: Instead of thinking about pulling the weight up, push the ground down.",
-        "Step 4: Keep following a straight upward bar path.",
-        "Step 5: Push your hips in!",
-        "Step 6: The upper back is especially important for the lockout.",
-        "Step 7: Standing up while holding the bar concludes your deadlift!",
+        "Step 1/7: First take a deep breath in and contract your lats.",
+        "Step 2/7: Push off the ground very hard. Good blastoff is necessary.",
+        "Step 3/7: Instead of thinking about pulling the weight up, push the ground down.",
+        "Step 4/7: Keep following a straight upward bar path.",
+        "Step 5/7: Push your hips in!",
+        "Step 6/7: The upper back is especially important for the lockout.",
+        "Step 7/7: Standing up while holding the bar concludes your deadlift!",
     ]
 
     recommendation($exercise_number) {
